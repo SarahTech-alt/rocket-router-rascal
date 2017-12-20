@@ -1,4 +1,4 @@
-var spaceshipParts = [
+let spaceshipParts = [
   {
     id: 6374,
     name: "Engine",

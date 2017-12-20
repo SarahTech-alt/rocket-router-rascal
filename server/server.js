@@ -1,9 +1,9 @@
-var express = require("express");
-var app = express();
-var hello = require('./routes/welcome');
-var parts = require('./routes/parts');
-var bodyParser = require('body-parser');
-var port = 8000;
+const express = require("express");
+const app = express();
+const hello = require('./routes/welcome');
+const parts = require('./routes/parts');
+const bodyParser = require('body-parser');
+const port = 8000;
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
