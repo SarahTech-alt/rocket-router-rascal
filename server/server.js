@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const hello = require('./routes/welcome');
 const parts = require('./routes/parts');
 const bodyParser = require('body-parser');
 const port = 8000;
@@ -10,7 +9,7 @@ app.use(bodyParser.json());
 
 app.use(express.static('server/public'));
 
-app.get('/hello', parts); // Oh, hi there! Wait, whose parts are these?
+app.use('/hello', parts); // Oh, hi there! Wait, whose parts are these?
 
 app.use('/parts', parts);
 
