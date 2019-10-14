@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const welcome = require('./routes/welcome');
 const parts = require('./routes/parts');
 const bodyParser = require('body-parser');
 const port = 8000;
