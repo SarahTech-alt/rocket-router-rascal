@@ -73,7 +73,7 @@ $(document).ready(function(){
   function getRocketPossibleCount(){
     $.ajax({
       type: 'GET',
-      url: 'parts/rocketCount',
+      url: '/parts/rocketCount',
       success: function(data){
         console.log(data);
         $('#numberOfSpaceships').text(data.count);
