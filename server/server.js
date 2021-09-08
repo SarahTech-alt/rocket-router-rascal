@@ -5,7 +5,7 @@ const parts = require('./routes/parts');
 const bodyParser = require('body-parser');
 const port = 8000;
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(express.static('server/public'));
