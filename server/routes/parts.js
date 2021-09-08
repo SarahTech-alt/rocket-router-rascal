@@ -17,7 +17,7 @@ router.get('/rocketCount', function(req, res){ // count your rockets or rocket y
     numberOfSpaceships = Math.min(numberOfSpaceships, Math.floor(spaceshipParts[i].inStock/spaceshipParts[i].needed));
   }
   let howMany = { count: numberOfSpaceships };
-  res.send(`${numberOfSpaceships}`);  // numberOfSpaceships is a number, how does express like that? howMany ways to say this...
+  res.send(howMany);  // numberOfSpaceships is a number, how does express like that? howMany ways to say this...
 });
 
 module.exports = router;

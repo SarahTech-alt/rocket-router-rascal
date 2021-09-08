@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 app.use(express.static('server/public'));
 
-app.use('/hello', parts); // Oh, hi there! Wait, whose parts are these?
+app.use('/welcome', parts); // Oh, hi there! Wait, whose parts are these?
 
 app.use('/parts', parts);
 
